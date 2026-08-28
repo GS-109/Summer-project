@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    padding: 20px;
+    padding: 25px;
     text-align: center;
     color: #FFFFFF;
     background-color: #000080;
@@ -17,21 +17,9 @@ header h1 {
     font-size: 48px;
 }
 
-nav {
-    margin-top: 18px;
-}
-
-nav a {
-    margin: 0 10px;
-    padding: 8px 12px;
-    border-radius: 5px;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #000000;
-    background-color: #FF9933;
+header p {
+    margin-bottom: 0;
+    font-size: 18px;
 }
 
 main {
@@ -69,22 +57,6 @@ section p {
 .welcome-section p {
     width: 650px;
     margin: 25px auto;
-}
-
-.button {
-    display: inline-block;
-    padding: 12px 20px;
-    border: 2px solid #000080;
-    border-radius: 5px;
-    color: #FFFFFF;
-    background-color: #000080;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.button:hover {
-    color: #000000;
-    background-color: #FF9933;
 }
 
 #skills,
