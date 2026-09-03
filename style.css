@@ -5,51 +5,59 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #000000;
+    color: #111111;
     background-color: #FFFFFF;
     line-height: 1.6;
 }
 
+/* ---------- Header ---------- */
 header {
-    padding: 25px;
+    padding: 40px 20px;
     text-align: center;
     color: #FFFFFF;
-    background-color: #000080;
+    background: linear-gradient(135deg, #000080 0%, #0000a0 100%);
 }
 
 header h1 {
-    margin: 0;
+    margin: 0 0 8px 0;
     font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 header p {
     margin: 0;
     font-size: 18px;
+    opacity: 0.95;
 }
 
+/* ---------- Main layout ---------- */
 main {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 section {
-    padding: 60px 40px;
+    padding: 60px 24px;
 }
 
 section h2 {
-    margin-top: 0;
+    margin: 0 0 20px 0;
     font-size: 32px;
     color: #000080;
+    font-weight: 700;
 }
 
 section p {
     font-size: 18px;
+    margin: 0 0 16px 0;
 }
 
+/* ---------- Welcome section ---------- */
 .welcome-section {
     min-height: 350px;
-    padding-top: 100px;
+    padding: 80px 24px 60px;
     text-align: center;
     background-color: #FFFFFF;
 }
@@ -57,60 +65,100 @@ section p {
 .welcome-section h2 {
     font-size: 42px;
     color: #000080;
+    margin-bottom: 16px;
 }
 
 .welcome-section p {
-    max-width: 650px;
-    margin: 25px auto;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
+/* ---------- Coloured sections ---------- */
 #skills,
 #contact {
     background-color: #FF9933;
+    border-radius: 12px;
+    margin: 20px 24px;
+    padding: 50px 30px;
 }
 
+#skills h2,
+#contact h2 {
+    color: #000080;
+}
+
+/* ---------- Boxes (about / skills / projects) ---------- */
 .about-boxes,
 .skills-boxes,
-.project-boxes {
+.project-boxes,
+.hobbies-boxes {
     display: flex;
-    gap: 30px;
-    margin-top: 30px;
+    gap: 24px;
+    margin-top: 24px;
     flex-wrap: wrap;
 }
 
 .info-box,
 .skill-box,
-.project-box {
-    flex: 1 1 300px; /* grow, shrink, base width */
-    padding: 25px;
-    border: 3px solid #000080;
-    border-radius: 8px;
+.project-box,
+.hobby-box {
+    flex: 1 1 260px;
+    padding: 24px;
+    border: 2px solid #000080;
+    border-radius: 10px;
     background-color: #FFFFFF;
+    box-shadow: 0 4px 14px rgba(0, 0, 128, 0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-/* Override border colour for project boxes */
+.info-box:hover,
+.skill-box:hover,
+.project-box:hover,
+.hobby-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 128, 0.14);
+}
+
+/* Project boxes have orange border */
 .project-box {
     border-color: #FF9933;
 }
 
 .info-box h3,
 .skill-box h3,
-.project-box h3 {
-    margin-top: 0;
+.project-box h3,
+.hobby-box h3 {
+    margin: 0 0 10px 0;
     color: #000080;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .info-box li {
     margin-bottom: 8px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .skill-box p,
-.project-box p {
+.project-box p,
+.hobby-box p {
     font-size: 16px;
     margin: 0;
+    line-height: 1.6;
 }
 
+/* ---------- Images in hobbies ---------- */
+.hobby-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 12px;
+    display: block;
+}
+
+/* ---------- Contact section ---------- */
 #contact {
     text-align: center;
 }
@@ -119,13 +167,16 @@ section p {
     color: #000080;
 }
 
+/* ---------- Footer ---------- */
 footer {
-    padding: 20px;
+    padding: 24px 20px;
     color: #FFFFFF;
     text-align: center;
     background-color: #000080;
+    margin-top: 20px;
 }
 
 footer p {
     margin: 0;
+    font-size: 15px;
 }
